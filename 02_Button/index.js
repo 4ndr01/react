@@ -11,9 +11,11 @@ function handleClick () {
   alert('Click depuis JS');  
 }
 
+
 // avec React
 // déclaration de mon composant MyButton avec une fonction
 function MyButton() {
+
   // déclaration de la fonction à exécuter au clic sur le bouton
   function handleClick() {
     alert('Click depuis React');
