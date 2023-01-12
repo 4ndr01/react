@@ -1,0 +1,115 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #999;
+  font-size: 16px;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+}
+
+.wrapper {
+  width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #eee;
+}
+
+form {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+form ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+form label {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+form li {
+  display: flex;
+  flex-direction: column;
+}
+
+form li + li {
+  margin-top: 8px;
+}
+
+form li:last-of-type {
+  margin-bottom: 16px;
+}
+
+form input[type=text],
+form input[type=password] {
+  width: 100%;
+  border-width: 0 0 1px 0;
+  border-bottom: 1px solid #111;
+  font-size: 18px;
+  padding: 8px;
+}
+
+button {
+  border: 0;
+  padding: 4px;
+  min-width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #ccc;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.todo-list__item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+}
+
+.todo-list__item p,
+.todo-list__item input[type=text] {
+  flex: 1;
+  margin: 0;
+  padding: 4px;
+  border: 1px solid #ccc;
+}
+
+.todo-list__item input:read-only{
+  background-color: #eee;
+}
+
+.todo-list__item input[type=text].done {
+  text-decoration: line-through;
+}
+
+.todo-list__item .btn-check {
+  background-color: rgb(82, 218, 67);
+}
+
+.todo-list__item .btn-remove {
+  background-color: rgb(210, 79, 79);
+}
+
+.todo-list__item .btn-save {
+  background-color: rgb(95, 102, 238);
+}
+
+.nav-item + .nav-item {
+  margin-left: 8px;
+}
